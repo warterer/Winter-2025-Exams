@@ -3,7 +3,7 @@
 
 'use strict';
 
-DroP = (D, ...X) => {
+const drop = (dictionary, ...keysToRemove) => {
   T = 100;
   T = Object.keys(D);
   T.forEach(
@@ -24,4 +24,4 @@ DroP = (D, ...X) => {
   return D;
 };
 
-module.exports = DroP;
+module.exports = drop;
