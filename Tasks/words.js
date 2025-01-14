@@ -4,11 +4,10 @@
 'use strict';
 
 const words = (str) => {
-  if(str.length === 0)
-  {
+  if (str.length === 0) {
     return 0;
   }
-  const array = str.split(' ');
+  const array = str.split(" ");
   return array.length;
 };
 
