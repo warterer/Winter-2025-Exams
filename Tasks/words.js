@@ -3,7 +3,7 @@
 
 'use strict';
 
-Words = function (s) {
+const words = (str) => {
   number_of_words_in_s = 0;
   flag = false;
   for (c of s) {
@@ -41,4 +41,4 @@ Words = function (s) {
   return number_of_words_in_s;
 };
 
-module.exports = Words;
+module.exports = words;
