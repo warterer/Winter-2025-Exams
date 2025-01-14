@@ -5,8 +5,7 @@
 
 const splitArray = (index, array) => {
   const firstPart = array.slice(0, index);
-  const len = array.length;
-  const secondPart = array.slice(index, len);
+  const secondPart = array.slice(index);
   return [firstPart, secondPart];
 };
 
