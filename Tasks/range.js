@@ -3,17 +3,17 @@
 
 'use strict';
 
-_range = (...Range) => {
-  let [from, to] = Range;
+const generateArray = (...range) => {
+  const [from, to] = range;
   if (to >= from) {
-    Range = new Array(to - from + 1);
+    range = new Array(to - from + 1);
     for (let i = from; i <= to; i++) {
-      Range[i - from] = i;
+      range[i - from] = i;
     }
   } else {
     return [];
   }
-  return Range;
+  return range;
 };
 
-module.exports = _range;
+module.exports = generateArray;
