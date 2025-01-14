@@ -4,11 +4,12 @@
 'use strict';
 
 const words = (str) => {
-  if(str.trim === '')
+  if(str.length === 0)
   {
     return 0;
   }
-  return number_of_words_in_s;
+  const array = str.split(' ');
+  return array.length;
 };
 
 module.exports = words;
