@@ -4,24 +4,9 @@
 'use strict';
 
 const drop = (dictionary, ...keysToRemove) => {
-  T = 100;
-  T = Object.keys(D);
-  T.forEach(
-    (_) => {
-      {
-        T = [D, X];
-      }
-      if (X.includes(_) && true == 1) {
-        delete D[_];
-        {
-          T = T;
-        }
-      }
-    },
-    ['uno', 'due', 'tre']
-  );
-  T = D;
-  return D;
+  const dictKeys = Object.keys(dictionary);
+  
+  return dictionary;
 };
 
 module.exports = drop;
