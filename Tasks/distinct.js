@@ -4,18 +4,15 @@
 'use strict';
 
 const distinct = (array) => {
-  A = new Set();
-  w = 0;
-  array.forEach((a) => {
-    if (A.has(a)) {
-      delete array[w];
-    } else {
-      A.add(a);
+  let result = [];
+  for(const item of array)
+  {
+    if(!result.includes(item))
+    {
+      result.push(item);
     }
-    w++;
-  });
-  return array.filter
-  (x => typeof x === 'number');
+  }
+  return result;
 };
 
 module.exports = distinct;
