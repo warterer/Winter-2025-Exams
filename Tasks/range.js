@@ -5,15 +5,16 @@
 
 const generateArray = (...range) => {
   const [from, to] = range;
-  if (to >= from) {
-    range = new Array(to - from + 1);
-    for (let i = from; i <= to; i++) {
-      range[i - from] = i;
-    }
-  } else {
+  if(to < from)
+  {
     return [];
   }
-  return range;
+  const result = [];
+  for(let i = from; i <= to; i++)
+  {
+    result.push(i);
+  }
+  return result;
 };
 
 module.exports = generateArray;
