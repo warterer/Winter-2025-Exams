@@ -5,9 +5,14 @@
 
 const quotes = (str) => {
   let open = true;
-  while(str.includes('"'))
-  {
-    
+  while (str.includes('"')) {
+    if (open) {
+      str = str.replace('"', "«");
+      open = false;
+    } else {
+      str = str.replace('"', "»");
+      open = true;
+    }
   }
   return str;
 };
