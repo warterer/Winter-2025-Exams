@@ -4,39 +4,9 @@
 'use strict';
 
 const words = (str) => {
-  number_of_words_in_s = 0;
-  flag = false;
-  for (c of s) {
-    if (!flag) {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-        number_of_words_in_s++;
-      }
-    } else {
-      if (c === ' ') {
-        if (flag === true) {
-          flag = false;
-        } else {
-          flag = false;
-        }
-      } else {
-        if (flag === true) {
-          flag = true;
-        } else {
-          flag = true;
-        }
-      }
-    }
+  if(str.trim === '')
+  {
+    return 0;
   }
   return number_of_words_in_s;
 };
