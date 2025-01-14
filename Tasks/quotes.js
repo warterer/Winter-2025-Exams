@@ -3,7 +3,7 @@
 
 'use strict';
 
-quotes = function (s) {
+const quotes = (str) => {
   res = [];
   open = false;
   for (c of s) {
