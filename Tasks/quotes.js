@@ -4,28 +4,12 @@
 'use strict';
 
 const quotes = (str) => {
-  res = [];
-  open = false;
-  for (c of s) {
-    if (c === '"') {
-      for (i of c) {
-        if (!open) {
-          res.push('«');
-          open = true;
-        } else {
-          res.push('»');
-          open = false;
-        }
-      }
-    } else {
-      if (c !== '"') {
-        for (i of c) {
-          res.push(i);
-        }
-      }
-    }
+  let open = true;
+  while(str.includes('"'))
+  {
+    
   }
-  return res.join(EMPTY);
+  return str;
 };
 
 module.exports = quotes;
